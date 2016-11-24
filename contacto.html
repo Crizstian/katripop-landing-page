@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Katripop</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Venta de ropa, accesorios y mas para niñas pre-adolescentes.">
+    <meta name="author" content="Katripop. Katripop.com">
+    <meta name="copyright" content="Katripop. Copyright (c) 2015">
+	<meta name="Sitio Desarrollado por" content="Cristian Ramirez Rosas">
+	<meta name="Katripop" content="Sitio Desarrollado por Cristian Ramirez Rosas">
+	<meta name="Katripop" content="Sitio Desarrollado por  Cristian Ramirez Rosas">
+	<meta name="Cristian Ramirez Rosas" content="Katripop">
+	
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+		<!-- Foundation -->
+	<link rel="stylesheet" href="import/foundation/css/foundation.css" />
+    <script src="import/foundation/js/vendor/modernizr.js"></script>
+
+	<title>Katripop</title>
+
+	<style type="text/css">
+@font-face {
+		  font-family: 'Pupcat';
+		  src: url('css/Pupcat.ttf')  format('truetype'); /* Safari, Android, iOS */
+		}
+		body{
+			background: white;
+			font-family: 'Pupcat', sans-serif;
+		}
+		h1,h2,h3,h4,h5, .content {
+			  font-family: 'Pupcat', sans-serif;
+			  color: #19191a;
+			}
+		a{
+			font-family: 'Pupcat', sans-serif;
+			color: #fd7ec6;
+		}
+
+		#info{
+			height: auto !default;
+			padding-top: 3em;
+		}
+
+		#info h2{
+			text-align: center;
+			font-size: 222.5%;
+		}
+
+		#info h3 a{
+			color: #119711;
+			text-decoration: underline;
+		}
+
+		#info h3{
+			padding-top: 1em;
+			text-align: center;
+			font-size: 302.5%;
+		}
+
+		#info p{
+			padding-top: 6em;
+			font-weight: 200;
+			font-size: 122.5%;
+			text-align: left;
+		}
+
+		#contacto, #contacto legend{
+			background: #fcebf7;
+		}
+
+		#contacto{
+			padding-bottom: 2em;
+		}
+
+		#contacto img{
+			padding-top: 2em;
+			-webkit-box-shadow: 0 8px 6px -6px black;
+		   -moz-box-shadow: 0 8px 6px -6px black;
+		        box-shadow: 0 8px 6px -6px black;
+		}
+
+		footer{
+			background: black;
+			color: white;
+		}
+
+	</style>
+
+</head>
+<body>
+	<header class="cd-main-header">
+		<a><a class="cd-logo" href="#0">Katripop® </a> 
+
+		<ul class="cd-header-buttons">
+			<li><a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a></li>
+		</ul> <!-- cd-header-buttons -->
+	</header>
+
+	<main class="cd-main-content">
+	</main>
+
+	<section id="info">
+		
+		<div class="row">
+			<div class="large-11 large-centered columns">
+	           <h2>CONTÁCTO</h2>
+ 
+				<div id="titulo" class="small-12 small-centered columns">
+					<h3>
+			          	<img src="import/img/Contacto.jpg" alt="logo"/>
+		           </h3>
+			   </div>
+ 
+	         </div>
+	     </div>
+		</div>
+	</section>
+	
+
+	<section id="contacto">
+      		<div class="row">
+	      		<div class="large-6 columns">
+	      			<img src="import/img/imagen1.jpg" alt="bici" />
+	      		</div>
+	      		
+	      		<div class="large-6 columns">
+	               <form data-abide action="php/mail.php" method="post" accept-charset="utf-8">
+	              <fieldset>
+	                  <legend>Contacto</legend>
+	                  <div class="row">
+	                    <div class="large-6 medium-6 small-12 medium-centered small-centered columns">
+	                      <label>Nombre: <small>requerido</small>
+	                          <input type="text" name="nombre" required pattern="alpha_numeric">
+	                      </label>
+	                      <small class="error">Ingrese un Nombre</small>
+	                    </div>
+	                  </div>
+	                  
+	                  <div class="row">
+	                    <div class="large-6 medium-6 small-12 medium-centered small-centered columns">
+	                      <label>E-mail: <small>requerido</small>
+	                          <input type="text" name="e-mail" id="e-mail" value="" required pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$">
+	                      </label>
+	                      <small class="error">E-mail no valido ejemplo@hotmail.com</small>
+	                    </div>
+	                  </div>
+	                  <!-- /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/  patron del correo mail -->
+	                  
+	                   <div class="row">
+	                    <div class="large-6 medium-6 small-12 medium-centered small-centered columns">
+	                      <label>Telefono: <small>requerido</small>
+	                          <input type="text" name="telefono" id="telefono" value="" required pattern="number">
+	                      </label>
+	                      <small class="error">Ingrese un numero telefonico</small>
+	                    </div>
+	                  </div>
+	                  <!-- /^[0-9]{3}-[0-9]{7}$/ patron numero telefonico 443-1020562  number-->
+	                  
+	                   <div class="row">
+	                    <div class="large-6 medium-6 small-12 medium-centered small-centered columns">
+	                      <label>Comentario: 
+	                          <textarea rows="7" cols="40" id="comentario" type="text" name="comentario"></textarea>
+	                      </label>
+	                    </div>
+	                  </div>
+	                  
+	                  <div class="row">
+	                  <div class="large-6 medium-6 small-12 medium-centered small-centered columns">
+	                    <div class="DivSubmit">
+	                      <button class="button" type="submit" name="submitenviar">Enviar</button>
+	                    </div>
+	                  </div>
+	                  </div>
+	                </fieldset>
+	              </form> 
+	             </div>
+	          </div>
+      		</section>
+
+
+	<footer>
+			<div class="large-12 autor columns">
+			   <div class="large-6 columns">
+			      <p class="">
+				      <br/>
+				  </p>
+			   </div>
+			   <div class="large-6 derechos columns">
+				 
+			   </div>
+			</div>
+		</footer>
+
+	<div class="cd-overlay"></div>
+
+<nav class="cd-nav">
+		<ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+			<li><a href="index.html">Inicio</a></li>
+
+			<li><a href="mundo_katripop.html">Mundo Katripop</a></li>
+
+			<li><a href="https://www.kichink.com/stores/id/34077" target="_blank">Tienda</a></li>
+
+			<li><a href="contacto.html">Contacto</a></li>
+
+			<li><a href="https://katripop.wordpress.com/" target="_blank">Blog</a></li>
+		</ul> <!-- primary-nav -->
+	</nav> <!-- cd-nav -->
+
+<!-- foundation -->
+    <script src="import/foundation/js/vendor/jquery.js"></script>
+    <script src="import/foundation/js/foundation.min.js"></script>
+
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+	 <script>
+      $(document).foundation({
+        abide:{
+          patterns:{
+          alpha: /^[áéíóúÁÉÍÓÚñña-zA-Z ]+$/,
+          alpha_numeric : /^[áéíóúÁÉÍÓÚñña-zA-Z0-9 ]+$/,
+          email : /^[a-zA-Z0-9.!$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
+          phone : /^(\()?[2-9]{1}\d{2}(\))?(-|\s)?\d{3}(-|\s)\d{4}$/,
+          number: /^[+]?[1-9]\d*$/
+          }
+        }
+      });
+    </script>
+</body>
+</html>
